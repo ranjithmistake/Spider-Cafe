@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SPIDER is an ultra-premium, cinematic fast-food cafe experience serving crispy fried chicken, artisanal smash burgers, Belgian chocolate shakes, electric mojitos, and nitro cold brew.">
+  <meta name="keywords" content="SPIDER Cafe, Premium Fast Food, Crispy Chicken, Smash Burgers, Gourmet Shakes, Nitro Cold Brew, Luxury Cafe">
+  <meta name="author" content="SPIDER Food Craft">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SPIDER — CRAVE THE DARK | Premium Cinematic Cafe">
+  <meta property="og:description" content="SPIDER isn't just fast food. SPIDER is an experience. Bold flavors, razor-sharp crunch, and late-night vibes.">
+  <meta property="og:image" content="assets/images/hero_food.jpg">
+  
+  <title>SPIDER — CRAVE THE DARK | Premium Fast-Food & Cafe</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E50914'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z'/></svg>">
+</head>
+<body>
+
+  <!-- 24 — SCROLL PROGRESS BAR -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- 26 — FULLSCREEN VIGNETTE -->
+  <div class="cinematic-vignette" aria-hidden="true"></div>
+
+  <!-- 25 — ANIMATED FILM GRAIN -->
+  <div class="cinematic-grain" aria-hidden="true"></div>
+
+  <!-- 11 — CUSTOM CONTEXT-AWARE CURSOR (Desktop) -->
+  <div class="custom-cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring">
+      <span class="cursor-text"></span>
+    </div>
+  </div>
+
+  <!-- 33 — FLOATING SENSORY BADGE -->
+  <div class="floating-sensory-badge" aria-hidden="true">CRISPY</div>
+
+  <!-- 12 — CINEMATIC STICKY NAVIGATION -->
+  <header class="site-nav">
+    <div class="nav-brand">
+      <a href="#hero" class="nav-logo-link" data-cursor="EXPLORE" aria-label="SPIDER Home">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24">
+          <path d="M12 2L14.5 7.5L20.5 8L16 12L17.5 18L12 15L6.5 18L8 12L3.5 8L9.5 7.5L12 2Z" />
+        </svg>
+        <span class="nav-brand-text">SPIDER</span>
+      </a>
+    </div>
+
+    <nav class="nav-menu" aria-label="Primary Navigation">
+      <a href="#menu" class="nav-link" data-cursor="VIEW">MENU</a>
+      <a href="#spotlight" class="nav-link" data-cursor="VIEW">SIGNATURE</a>
+      <a href="#drinks" class="nav-link" data-cursor="VIEW">DRINKS</a>
+      <a href="#story" class="nav-link" data-cursor="VIEW">EXPERIENCE</a>
+      <a href="#location" class="nav-link" data-cursor="VIEW">LOCATION</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">
+        ORDER NOW
+      </button>
+      
+      <button type="button" class="cart-trigger-btn" aria-label="View Cart" data-cursor="VIEW">
+        <svg class="cart-icon-svg" viewBox="0 0 24 24">
+          <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+        </svg>
+        <span class="cart-badge-count">0</span>
+      </button>
+
+      <button type="button" class="hamburger-toggle" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 13 — FULLSCREEN MOBILE NAVIGATION OVERLAY -->
+  <div class="mobile-menu-overlay" aria-hidden="true">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item"><a href="#menu" class="mobile-nav-link">MENU</a></li>
+      <li class="mobile-menu-item"><a href="#spotlight" class="mobile-nav-link">SIGNATURE</a></li>
+      <li class="mobile-menu-item"><a href="#drinks" class="mobile-nav-link">DRINKS</a></li>
+      <li class="mobile-menu-item"><a href="#story" class="mobile-nav-link">EXPERIENCE</a></li>
+      <li class="mobile-menu-item"><a href="#location" class="mobile-nav-link">LOCATION</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" style="padding: 14px 40px;">
+        ORDER NOW
+      </button>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         04 & 05 — ULTRA-CLEAN CINEMATIC HERO EXPERIENCE
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <!-- Ambient Crimson Light Leak -->
+      <div class="light-leak light-leak--hero" aria-hidden="true"></div>
+
+      <!-- Atmospheric Canvas Dust & Floating Red Embers -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Multi-layer Visual Stage -->
+      <div class="hero-stage">
+        <!-- Hero Background Food Photography (Parallax 0.25) -->
+        <div class="hero-bg-media-container">
+          <img src="assets/images/hero_food.jpg" alt="SPIDER Signature Crimson Feast" class="hero-bg-media ken-burns-active" />
+          <div class="hero-gradient-overlay"></div>
+        </div>
+      </div>
+
+      <!-- Ultra-Clean Hero Content (Zero clutter) -->
+      <div class="hero-content">
+        <div class="hero-title-wrap">
+          <h1 class="hero-title glitch-hover" data-cursor="EXPLORE">
+            SPI<span class="red-accent">D</span>ER
+          </h1>
+        </div>
+
+        <p class="hero-tagline">CRAVE THE DARK.</p>
+
+        <div class="hero-cta-group">
+          <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">
+            ORDER NOW
+          </button>
+          <a href="#menu" class="btn-magnetic" data-cursor="VIEW">
+            EXPLORE MENU
+          </a>
+        </div>
+      </div>
+
+      <!-- Minimal Scroll Indicator -->
+      <div class="hero-scroll-indicator" data-cursor="VIEW">
+        <span class="scroll-text">SCROLL</span>
+        <div class="scroll-line-track">
+          <div class="scroll-line-pulse"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         14 — INTRODUCTION STATEMENT SECTION
+         ========================================================================== -->
+    <section class="intro-section">
+      <div class="intro-container">
+        <span class="intro-badge">THE PHILOSOPHY</span>
+        <h2 class="intro-headline text-reveal-stagger">
+          <span>BUILT FOR</span>
+          <span class="highlight-red">CRAVINGS.</span>
+        </h2>
+        <p class="intro-subtext">
+          SPIDER isn’t just fast food. It’s an obsessive nocturnal craft. 
+          Bold spices, hand-battered razor crunch, artisan cold brews, and unforgettable energy.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         15 — INTERACTIVE MENU SHOWCASE
+         ========================================================================== -->
+    <section id="menu" class="menu-showcase-section">
+      <div class="section-header">
+        <span class="section-eyebrow">CURATED SELECTION</span>
+        <h2 class="section-title">THE ARSENAL</h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-categories-bar" role="tablist">
+        <button type="button" class="category-tab-btn active" data-category="chicken" role="tab" data-cursor="VIEW">CHICKEN</button>
+        <button type="button" class="category-tab-btn" data-category="burgers" role="tab" data-cursor="VIEW">BURGERS</button>
+        <button type="button" class="category-tab-btn" data-category="shakes" role="tab" data-cursor="VIEW">SHAKES</button>
+        <button type="button" class="category-tab-btn" data-category="mojitos" role="tab" data-cursor="VIEW">MOJITOS</button>
+        <button type="button" class="category-tab-btn" data-category="cold_coffee" role="tab" data-cursor="VIEW">COLD COFFEE</button>
+        <button type="button" class="category-tab-btn" data-category="veg" role="tab" data-cursor="VIEW">PLANT / VEG</button>
+        <button type="button" class="category-tab-btn" data-category="more" role="tab" data-cursor="VIEW">EXTRAS</button>
+      </div>
+
+      <!-- Category Spotlight Banner -->
+      <div class="category-spotlight-card reveal-clip">
+        <img src="assets/images/signature_chicken.jpg" alt="Category Feature" class="category-spotlight-img" />
+        <div class="category-spotlight-content">
+          <div>
+            <h3 class="category-spotlight-title">SIGNATURE CHICKEN</h3>
+            <p class="category-spotlight-desc">CRISPY. JUICY. UNFORGETTABLE.</p>
+          </div>
+          <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">
+            OPEN COMPLETE MENU →
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Product Cards Grid -->
+      <div class="products-grid">
+        <!-- Dynamically rendered via js/main.js & js/config.js -->
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         16 — SIGNATURE CHICKEN SPOTLIGHT SECTION
+         ========================================================================== -->
+    <section id="spotlight" class="spotlight-section">
+      <div class="spotlight-bg-wrap">
+        <img src="assets/images/signature_chicken.jpg" alt="Signature Crispy Chicken" class="spotlight-bg-img" />
+        <div class="spotlight-radial-mask"></div>
+      </div>
+
+      <div class="spotlight-content text-reveal-stagger">
+        <span class="spotlight-eyebrow">HERITAGE CRUNCH</span>
+        <h2 class="spotlight-headline">CRISPY HAS A <span style="color: var(--spider-red-bright);">NEW HOME.</span></h2>
+        <p class="spotlight-desc">
+          24-hour black garlic buttermilk marinade. Triple-dusted in seasoned flour with crushed peppercorns and smoked paprika, fried to an unmistakable acoustic shatter.
+        </p>
+        
+        <div class="spotlight-flavor-pills">
+          <span class="flavor-pill active">TRIPLE CRUNCH</span>
+          <span class="flavor-pill">SMOKED PAPRIKA</span>
+          <span class="flavor-pill">BUTTERMILK SOAK</span>
+        </div>
+
+        <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">
+          CLAIM YOUR BUCKET — ₹399
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         17 — ASYMMETRICAL EDITORIAL BURGER SECTION
+         ========================================================================== -->
+    <section class="editorial-burger-section">
+      <div class="editorial-burger-grid">
+        <div class="editorial-burger-content text-reveal-stagger">
+          <span class="section-eyebrow">DOUBLE SMASH CRAFT</span>
+          <h2 class="editorial-burger-title">STACKED FOR <span style="color: var(--spider-red-bright);">THE CRAVE.</span></h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+            We don't do gentle patties. Smashed hard onto screaming hot cast iron for caramelized lacy edges, dripping in smoked pepperjack and house truffle aioli.
+          </p>
+
+          <div class="burger-layer-specs">
+            <div class="layer-spec-item">
+              <span class="layer-spec-num">01</span>
+              <span class="layer-spec-text">Toasted Charcoal & Black Sesame Brioche Bun</span>
+            </div>
+            <div class="layer-spec-item">
+              <span class="layer-spec-num">02</span>
+              <span class="layer-spec-text">Double Aged Smashed Beef Patties with Crispy Lacey Edges</span>
+            </div>
+            <div class="layer-spec-item">
+              <span class="layer-spec-num">03</span>
+              <span class="layer-spec-text">Molten Smoked Pepperjack Cheese & Blistered Jalapeños</span>
+            </div>
+            <div class="layer-spec-item">
+              <span class="layer-spec-num">04</span>
+              <span class="layer-spec-text">Black Truffle Aioli & Caramelized Red Onion Jam</span>
+            </div>
+          </div>
+
+          <div>
+            <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">
+              ORDER THE ARACHNID SMASH — ₹389
+            </button>
+          </div>
+        </div>
+
+        <div class="editorial-burger-visual reveal-clip" data-cursor="VIEW">
+          <img src="assets/images/editorial_burger.jpg" alt="Double Smash Arachnid Burger" class="editorial-burger-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         18 & 19 — DRINK EXPERIENCE (Split-Screen Mojito vs Cold Coffee)
+         ========================================================================== -->
+    <section id="drinks" class="split-drink-section">
+      <!-- Mojito Side -->
+      <div class="split-side split-side--mojito" data-cursor="EXPLORE">
+        <img src="assets/images/mojito_cocktail.jpg" alt="Blood Berry Sparkling Mojito" class="split-side-bg" />
+        <div class="split-side-overlay"></div>
+        <div class="split-side-content">
+          <span class="section-eyebrow" style="justify-content: center;">ICE & EFFERVESCENCE</span>
+          <h2 class="split-side-title">BLOOD MOJITO</h2>
+          <p class="split-side-desc">Crushed wild raspberries, bruised organic mint, crystal ice spheres, and electric sparkling soda.</p>
+          <button type="button" class="btn-magnetic" data-action="open-order-portal" data-cursor="ORDER">
+            SIP THE SPARK — ₹189
+          </button>
+        </div>
+      </div>
+
+      <!-- Cold Coffee Side -->
+      <div class="split-side split-side--coffee" data-cursor="EXPLORE">
+        <img src="assets/images/cold_coffee.jpg" alt="Nitro Obsidian Cold Brew" class="split-side-bg" />
+        <div class="split-side-overlay"></div>
+        <div class="split-side-content">
+          <span class="section-eyebrow" style="justify-content: center;">20-HOUR NITRO STEEP</span>
+          <h2 class="split-side-title">DARK NITRO</h2>
+          <p class="split-side-desc">Single-origin dark roast Arabica steeped 20 hours with a cascading Guinness-style velvet micro-foam head.</p>
+          <button type="button" class="btn-magnetic" data-action="open-order-portal" data-cursor="ORDER">
+            BREW THE DARK — ₹199
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         20 — HORIZONTAL PINNED GALLERY
+         ========================================================================== -->
+    <section class="horizontal-gallery-wrapper">
+      <div class="horizontal-gallery-track">
+        
+        <!-- Panel 01: Chicken -->
+        <div class="gallery-panel">
+          <img src="assets/images/signature_chicken.jpg" alt="Chicken" class="gallery-panel-bg" />
+          <div class="gallery-panel-overlay"></div>
+          <div class="gallery-panel-inner">
+            <div>
+              <div class="gallery-number">01</div>
+              <h2 class="gallery-panel-title">CRIMSON FRIED CHICKEN</h2>
+              <p class="gallery-panel-desc">Hand-dusted with 14 secret spices. Fried fresh to order for an explosive crunch in every single bite.</p>
+              <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">ORDER NOW</button>
+            </div>
+            <div class="gallery-card-preview">
+              <img src="assets/images/signature_chicken.jpg" alt="Crispy Drumsticks" class="gallery-card-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 02: Burgers -->
+        <div class="gallery-panel">
+          <img src="assets/images/editorial_burger.jpg" alt="Burgers" class="gallery-panel-bg" />
+          <div class="gallery-panel-overlay"></div>
+          <div class="gallery-panel-inner">
+            <div>
+              <div class="gallery-number">02</div>
+              <h2 class="gallery-panel-title">OBSIDIAN SMASH BURGERS</h2>
+              <p class="gallery-panel-desc">Double-smashed beef patties, molten cheddar cascades, and house pepper relish on dark charcoal brioche.</p>
+              <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">ORDER NOW</button>
+            </div>
+            <div class="gallery-card-preview">
+              <img src="assets/images/editorial_burger.jpg" alt="Double Smashed Burger" class="gallery-card-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 03: Shakes -->
+        <div class="gallery-panel">
+          <img src="assets/images/shakes_luxury.jpg" alt="Shakes" class="gallery-panel-bg" />
+          <div class="gallery-panel-overlay"></div>
+          <div class="gallery-panel-inner">
+            <div>
+              <div class="gallery-number">03</div>
+              <h2 class="gallery-panel-title">VELVET BROWNIE SHAKES</h2>
+              <p class="gallery-panel-desc">Handspun Belgian chocolate gelato crowned with warm fudge brownies and crushed KitKat crisps.</p>
+              <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">ORDER NOW</button>
+            </div>
+            <div class="gallery-card-preview">
+              <img src="assets/images/shakes_luxury.jpg" alt="Brownie Shakes" class="gallery-card-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 04: Mojitos -->
+        <div class="gallery-panel">
+          <img src="assets/images/mojito_cocktail.jpg" alt="Mojitos" class="gallery-panel-bg" />
+          <div class="gallery-panel-overlay"></div>
+          <div class="gallery-panel-inner">
+            <div>
+              <div class="gallery-number">04</div>
+              <h2 class="gallery-panel-title">RUBY CITRUS MOJITOS</h2>
+              <p class="gallery-panel-desc">Freshly muddled mint, Sicilian blood oranges, and bubbling sparkling tonic over crystal-clear ice.</p>
+              <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">ORDER NOW</button>
+            </div>
+            <div class="gallery-card-preview">
+              <img src="assets/images/mojito_cocktail.jpg" alt="Mojito Glass" class="gallery-card-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 05: Cold Coffee -->
+        <div class="gallery-panel">
+          <img src="assets/images/cold_coffee.jpg" alt="Cold Coffee" class="gallery-panel-bg" />
+          <div class="gallery-panel-overlay"></div>
+          <div class="gallery-panel-inner">
+            <div>
+              <div class="gallery-number">05</div>
+              <h2 class="gallery-panel-title">NITRO COLD BREW</h2>
+              <p class="gallery-panel-desc">Velvety nitrogen-infused micro-foam over deep single-origin cold steep for clean, jitter-free energy.</p>
+              <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">ORDER NOW</button>
+            </div>
+            <div class="gallery-card-preview">
+              <img src="assets/images/cold_coffee.jpg" alt="Nitro Coffee" class="gallery-card-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 06: Plant-Powered Veg -->
+        <div class="gallery-panel">
+          <img src="assets/images/veg_special.jpg" alt="Veg Special" class="gallery-panel-bg" />
+          <div class="gallery-panel-overlay"></div>
+          <div class="gallery-panel-inner">
+            <div>
+              <div class="gallery-number">06</div>
+              <h2 class="gallery-panel-title">PLANT-POWERED CRUNCH</h2>
+              <p class="gallery-panel-desc">Spiced herb paneer slabs, charred jalapeño salsa, and truffle-dusted lattice waffle fries.</p>
+              <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER">ORDER NOW</button>
+            </div>
+            <div class="gallery-card-preview">
+              <img src="assets/images/veg_special.jpg" alt="Veg Paneer Burger" class="gallery-card-img">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         21 — STICKY STORYTELLING ("WHY SPIDER?")
+         ========================================================================== -->
+    <section id="story" class="sticky-story-section">
+      <div class="sticky-story-container">
+        
+        <div class="sticky-col-left">
+          <span class="section-eyebrow">THE CRAFT</span>
+          <h2 class="sticky-heading">WHY<br><span style="color: var(--spider-red-bright);">SPIDER?</span></h2>
+        </div>
+
+        <div class="sticky-col-right">
+          <!-- Panel 1 -->
+          <div class="story-panel is-active">
+            <span class="story-panel-num">01 / ACOUSTICS</span>
+            <h3 class="story-panel-title">THE CRUNCH</h3>
+            <p class="story-panel-text">
+              Every piece of SPIDER chicken is engineered for sound. We blend double-fermented buttermilk with an artisanal flour dredge to produce a crisp outer crust that stays loud even under hot sauces.
+            </p>
+          </div>
+
+          <!-- Panel 2 -->
+          <div class="story-panel">
+            <span class="story-panel-num">02 / CHEMISTRY</span>
+            <h3 class="story-panel-title">THE FLAVOR</h3>
+            <p class="story-panel-text">
+              We combine smoked paprika, black garlic, cayenne pepper, and dark honey to craft high-contrast flavors that strike the palate with smoky warmth followed by an addictive savory depth.
+            </p>
+          </div>
+
+          <!-- Panel 3 -->
+          <div class="story-panel">
+            <span class="story-panel-num">03 / NIGHTLIFE</span>
+            <h3 class="story-panel-title">THE EXPERIENCE</h3>
+            <p class="story-panel-text">
+              Fast food doesn’t have to feel disposable. SPIDER fuses midnight lounge aesthetics with chef-tier kitchen execution, serving late-night cravings in an atmosphere built for the nocturnal culture.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         36 — FINAL CINEMATIC CALL TO ACTION
+         ========================================================================== -->
+    <section class="final-cta-section">
+      <img src="assets/images/final_feast.jpg" alt="Midnight Feast" class="final-cta-bg ken-burns-active" />
+      <div class="final-cta-overlay"></div>
+      <div class="final-cta-content text-reveal-stagger">
+        <h2 class="final-cta-title">SEE YOU AT <span style="color: var(--spider-red-bright);">SPIDER.</span></h2>
+        <p class="final-cta-sub">ONE MORE BITE. CRAVE THE DARK.</p>
+        <button type="button" class="btn-magnetic btn-magnetic--primary" data-action="open-order-portal" data-cursor="ORDER" style="padding: 16px 48px; font-size: 0.95rem;">
+          ORDER NOW
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LOCATION & DIRECTIONS SECTION
+         ========================================================================== -->
+    <section id="location" class="location-section">
+      <div class="location-container">
+        <div class="location-info text-reveal-stagger">
+          <span class="section-eyebrow">THE DESTINATION</span>
+          <h2 class="location-title">FIND <span style="color: var(--spider-red-bright);">SPIDER.</span></h2>
+          <p class="location-desc">
+            Located in Kondalampatti, Salem. Step into the midnight atmosphere or pick up your feast on the go.
+          </p>
+
+          <div class="location-details-card">
+            <div class="location-detail-row">
+              <span class="location-detail-icon">📍</span>
+              <div>
+                <h4 class="location-detail-label">ADDRESS</h4>
+                <p class="location-detail-val">Spider Cafe, Kondalampatti Bypass<br>(Near Indian Oil Petrol Bunk), Salem, Tamil Nadu 636010</p>
+              </div>
+            </div>
+
+            <div class="location-detail-row">
+              <span class="location-detail-icon">⏰</span>
+              <div>
+                <h4 class="location-detail-label">OPERATING HOURS</h4>
+                <p class="location-detail-val">Monday – Sunday: 11:00 AM – 03:00 AM<br><span style="color: var(--spider-red-bright); font-size: 0.8rem; font-weight: 700;">● LIVE LATE-NIGHT KITCHEN</span></p>
+              </div>
+            </div>
+
+            <div class="location-detail-row">
+              <span class="location-detail-icon">🧭</span>
+              <div>
+                <h4 class="location-detail-label">COORDINATES</h4>
+                <p class="location-detail-val" style="font-family: var(--font-mono); color: var(--text-white);">11.6315° N, 78.1264° E</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://maps.app.goo.gl/4VNg33rjj6LS36kSA" target="_blank" rel="noopener noreferrer" class="btn-magnetic btn-magnetic--primary" data-cursor="MAP">
+              GET DIRECTIONS ON GOOGLE MAPS ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="location-map-wrap reveal-clip" data-cursor="EXPLORE">
+          <iframe 
+            src="https://maps.google.com/maps?q=Spider+cafe,+Kondalampatti+bypass,+Salem,+Tamil+Nadu&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            class="location-map-frame" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Spider Cafe Google Maps Location">
+          </iframe>
+          <div class="location-map-overlay-badge">
+            <span class="badge-dot"></span>
+            SPIDER CAFE • SALEM
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       PERSISTENT FLOATING BOTTOM ORDER BAR
+       ========================================================================== -->
+  <aside class="floating-order-bar" aria-label="Quick Order Bar">
+    <div class="floating-bar-info">
+      <svg class="floating-bar-logo" viewBox="0 0 24 24">
+        <path d="M12 2L14.5 7.5L20.5 8L16 12L17.5 18L12 15L6.5 18L8 12L3.5 8L9.5 7.5L12 2Z" />
+      </svg>
+      <span class="floating-bar-text">SPIDER KITCHEN <span class="floating-bar-sub">• ORDER NOW</span></span>
+    </div>
+    <button type="button" class="floating-bar-btn" data-action="open-order-portal">
+      ORDER NOW
+    </button>
+  </aside>
+
+  <!-- ==========================================================================
+       DEDICATED FULL-SCREEN ORDERING PORTAL
+       ========================================================================== -->
+  <div id="spider-order-portal" class="spider-order-portal" aria-hidden="true" role="dialog" aria-modal="true">
+    
+    <!-- Portal Top Bar -->
+    <header class="portal-header">
+      <div class="portal-brand">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24">
+          <path d="M12 2L14.5 7.5L20.5 8L16 12L17.5 18L12 15L6.5 18L8 12L3.5 8L9.5 7.5L12 2Z" />
+        </svg>
+        <h2 class="portal-title">SPIDER LIVE KITCHEN</h2>
+        <div class="portal-status-pill">
+          <span class="portal-status-dot"></span>
+          OPEN FOR ORDERING
+        </div>
+      </div>
+
+      <!-- Real-time Dish Search -->
+      <div class="portal-search-wrap">
+        <svg class="portal-search-icon" viewBox="0 0 24 24">
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+        <input type="text" class="portal-search-input" placeholder="Search chicken, burgers, shakes, mojitos..." aria-label="Search Menu">
+      </div>
+
+      <button type="button" class="portal-close-btn" aria-label="Close Ordering Portal">✕</button>
+    </header>
+
+    <!-- Category Quick Navigation Strip -->
+    <nav class="portal-categories-strip" aria-label="Category Filters">
+      <button type="button" class="portal-category-chip active" data-portal-filter="all">🍗 ALL DISHES</button>
+      <button type="button" class="portal-category-chip" data-portal-filter="chicken">🍗 CHICKEN</button>
+      <button type="button" class="portal-category-chip" data-portal-filter="burgers">🍔 BURGERS</button>
+      <button type="button" class="portal-category-chip" data-portal-filter="shakes">🍫 SHAKES</button>
+      <button type="button" class="portal-category-chip" data-portal-filter="mojitos">🍹 MOJITOS</button>
+      <button type="button" class="portal-category-chip" data-portal-filter="cold_coffee">☕ COLD COFFEE</button>
+      <button type="button" class="portal-category-chip" data-portal-filter="veg">🥑 PLANT / VEG</button>
+      <button type="button" class="portal-category-chip" data-portal-filter="more">🍟 SHARING & EXTRAS</button>
+    </nav>
+
+    <!-- Portal 2-Column Body -->
+    <div class="portal-body">
+      <!-- Left Column: The Complete Menu Catalog -->
+      <section class="portal-menu-pane">
+        <!-- Dynamically rendered via js/cart.js -->
+      </section>
+
+      <!-- Right Column: Live Sticky Order Summary & Cart -->
+      <aside class="portal-summary-pane" aria-label="Live Order Summary">
+        <div class="summary-header">
+          <h3 class="summary-title">YOUR DARK FEAST</h3>
+          <span class="summary-count-badge" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--spider-red-bright); font-weight: 700;">0 items</span>
+        </div>
+
+        <div class="summary-items-list">
+          <!-- Dynamically populated via js/cart.js -->
+        </div>
+
+        <div class="summary-footer">
+          <div class="summary-type-tabs">
+            <button type="button" class="summary-type-btn active" data-type="DINE_IN">DINE IN</button>
+            <button type="button" class="summary-type-btn" data-type="TAKEAWAY">TAKEAWAY</button>
+            <button type="button" class="summary-type-btn" data-type="DELIVERY">DELIVERY</button>
+          </div>
+
+          <div class="summary-line-row">
+            <span>Item Subtotal</span>
+            <span class="summary-subtotal-val" style="font-family: var(--font-mono); font-weight: 700; color: var(--text-white);">₹0</span>
+          </div>
+          <div class="summary-line-row">
+            <span>Taxes & GST (5%)</span>
+            <span class="summary-gst-val" style="font-family: var(--font-mono); color: var(--text-white);">₹0</span>
+          </div>
+          <div class="summary-grand-total">
+            <span style="font-family: var(--font-mono); font-size: 0.9rem; font-weight: 700; text-transform: uppercase;">Total Amount</span>
+            <span class="summary-grand-val">₹0</span>
+          </div>
+
+          <button type="button" class="btn-portal-checkout">
+            TRANSMIT ORDER NOW
+          </button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       37 — LUXURY FOOTER
+       ========================================================================== -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-top-grid">
+      <div>
+        <h3 class="footer-brand-logo">SPIDER</h3>
+        <p class="footer-brand-tagline">
+          The dark food craft. Late night dining, crispy fried chicken, smashed burgers & artisan drinks.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">NAVIGATION</h4>
+        <ul class="footer-links-list">
+          <li><a href="#menu" class="footer-link">Menu Arsenal</a></li>
+          <li><a href="#spotlight" class="footer-link">Signature Chicken</a></li>
+          <li><a href="#drinks" class="footer-link">Beverage Craft</a></li>
+          <li><a href="#story" class="footer-link">Why Spider?</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">LOCATION & HOURS</h4>
+        <ul class="footer-links-list">
+          <li class="footer-link">Spider Cafe, Kondalampatti Bypass</li>
+          <li class="footer-link">Near Indian Oil Petrol Bunk, Salem</li>
+          <li class="footer-link">Mon–Sun: 11:00 AM – 03:00 AM</li>
+          <li>
+            <a href="https://maps.app.goo.gl/4VNg33rjj6LS36kSA" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--spider-red-bright); font-weight: 700;">
+              Google Maps Location ↗
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">SOCIAL</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener" class="footer-link">Instagram</a></li>
+          <li><a href="https://tiktok.com" target="_blank" rel="noopener" class="footer-link">TikTok</a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener" class="footer-link">X / Twitter</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener" class="footer-link">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <p class="footer-copyright">
+        © 2026 SPIDER FOOD CRAFT CORP. ALL RIGHTS RESERVED. MADE FOR THE CRAVE.
+      </p>
+      <button type="button" class="back-to-top-btn" data-cursor="VIEW">
+        BACK TO TOP
+        <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       34 & 35 — CART SLIDE-IN DRAWER & BACKDROP
+       ========================================================================== -->
+  <div class="cart-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3 class="cart-title">YOUR DARK FEAST</h3>
+      <button type="button" class="cart-close-btn" aria-label="Close Cart">✕</button>
+    </div>
+
+    <div class="cart-items-container">
+      <!-- Items dynamically populated via js/cart.js -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span class="cart-total-label">SUBTOTAL</span>
+        <span class="cart-total-value">₹0</span>
+      </div>
+      <button type="button" class="btn-magnetic btn-magnetic--primary btn-checkout" style="width: 100%;">
+        PROCEED TO CHECKOUT
+      </button>
+    </div>
+  </aside>
+
+  <!-- ITEM CUSTOMIZATION MODAL -->
+  <div class="custom-modal-backdrop" aria-hidden="true">
+    <div class="custom-modal">
+      <img src="assets/images/hero_food.jpg" alt="Dish Preview" class="modal-header-img">
+      <div class="modal-body">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <div>
+            <h3 class="modal-title">Venom Crimson Drumsticks</h3>
+            <p class="modal-desc" style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.3rem;">Triple-dipped spicy crunch with smoky chili paprika dust</p>
+          </div>
+          <button type="button" class="modal-close-btn" style="font-size: 1.4rem; color: var(--text-muted);" aria-label="Close Modal">✕</button>
+        </div>
+
+        <div class="modal-options-list">
+          <!-- Dynamic Option Selectors populated via js/cart.js -->
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+          <div class="modal-price-val" style="font-family: var(--font-mono); font-size: 1.4rem; font-weight: 700; color: var(--spider-red-bright);">₹399</div>
+          <button type="button" class="btn-magnetic btn-magnetic--primary btn-modal-add">
+            ADD TO FEAST
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN Scripts: GSAP & Lenis Smooth Scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- ES Module Application -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
